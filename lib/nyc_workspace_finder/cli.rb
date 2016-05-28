@@ -1,7 +1,9 @@
 class NycWorkspaceFinder::CLI 
 
     def call
-      puts "Welcome to NYC Workspace Finder. We provide up-to-date pricing info on unique, art-oriented, or straight-punk workspaces throughout New York City. You won't find WeWork here!"
+      puts "---------------------------------------------------------------------------------------------------------------------------------------"
+      puts "Welcome to NYC Workspace Finder. Providing up-to-date pricing info on unique, art or punk-oriented workspaces throughout New York City!"
+      puts "---------------------------------------------------------------------------------------------------------------------------------------"
       puts ""
       start 
       manhattan_or_brooklyn 
@@ -16,13 +18,14 @@ class NycWorkspaceFinder::CLI
     def manhattan_or_brooklyn  
       if @input == "manhattan" || @input2 == "manhattan"
           puts "Please choose a workspace by number to find out more about its pricing options."
-          puts "1. The Productive"
+          puts "1. The Productive -- 38th St."
           @workspace = gets.strip 
           manhattan_workspace_data
           again    
       elsif @input == "brooklyn" || @input2 == "brooklyn"
           puts "Please choose a workspace by number to find out more about its pricing options."
-          puts "1. No Space"
+          puts "1. No Space -- Greenpoint"
+          puts "2. Brooklyn Creative League -- Gowanus"
           @workspace = gets.strip
           brooklyn_workspace_data
           again
@@ -38,6 +41,8 @@ class NycWorkspaceFinder::CLI
     def brooklyn_workspace_data
       if @workspace == "1"
           no_space_data
+      elsif @workspace == "2"
+          brooklyn_creative_league_data
       end
     end 
 
@@ -60,6 +65,14 @@ class NycWorkspaceFinder::CLI
       puts "Contact: info@theproductivenyc.com or call 917-668-8574"
     end
 
+    def brooklyn_creative_league_data
+      something3 = NycWorkspaceFinder::Scraper.new 
+      something3.scrape_brooklyncreativeleague
+      puts ""
+      puts "#{something3.ft_desks}"
+      puts "#{something3.pvt_offce}"
+    end
+
     def again
       puts ""
       puts "Would you like to see more workspaces?"
@@ -70,7 +83,7 @@ class NycWorkspaceFinder::CLI
           manhattan_or_brooklyn
         else 
           puts ""
-          puts "Bye! Remember to check back later for updated workspace options!" 
+          puts "Check back later for new workspace options!" 
         end 
     end 
 
