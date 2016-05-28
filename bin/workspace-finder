@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby 
+
+require './lib/nyc_workspace_finder'
+
+NycWorkspaceFinder::CLI.new.call 
