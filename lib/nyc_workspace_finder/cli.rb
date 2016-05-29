@@ -66,6 +66,7 @@ class NycWorkspaceFinder::CLI
       puts "digital artists, designers, writers and editors are all welcome."
       puts ""
       puts "ADDRESS: 40 W. 38th St. 5th floor"
+      puts "WEBSITE: http://theproductivenyc.com"
       puts "CONTACT: info@theproductivenyc.com or call 917-668-8574"
     end
 
@@ -78,6 +79,7 @@ class NycWorkspaceFinder::CLI
       puts "ADDED INFO: current tenants are involved in video/film, art, journalism, marketing, graphic design, and non-profit advocacy work."
       puts ""
       puts "ADDRESS: 67 West St, #304, Greenpoint, Brooklyn, 11222."
+      puts "WEBSITE: http://notanalternative.org/2011/05/17/coworking-no↔space-featured-in-ny-post/"
       puts "CONTACT: info@notanalternative.net"
     end
 
@@ -95,6 +97,7 @@ class NycWorkspaceFinder::CLI
       puts "and a community of professional colleagues."
       puts ""
       puts "ADDRESS: 540 President St, Brooklyn NY 11215"
+      puts "WEBSITE: http://brooklyncreativeleague.com"
       puts "CONTACT: (718) 576-2104"
     end
 
@@ -109,6 +112,7 @@ class NycWorkspaceFinder::CLI
       puts "ADDED INFO: Con Artist is an art collective, community, workspace & gallery. Our venue hosts events, publications, collaboration, products, and essentially shapes the ideal circumstances for creative people and their creative pursuits. The most common reason members join the collective is for 24/7 access to our shared workspace. The two floors have all the tools necessaryto pull off most any kind of project. Our members have built nearly everything at our 119 Ludlow location, so the space is fine-tuned to perpetuate the spirit of creativity and growth."
       puts ""
       puts "ADDRESS: 119 Ludlow St, New York, NY 10002"
+      puts "WEBSITE: http://conartistnyc.com"
       puts "CONTACT: (646) 504-2323"
     end 
 
