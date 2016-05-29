@@ -11,7 +11,6 @@ attr_accessor :computer_station, :open_desk, :nights_weekends,
  
     def scrape_productive
       doc = Nokogiri::HTML(open("http://theproductivenyc.com/prices/"))
-
       self.open_desk = doc.search("tr td").first.text[1..-1].split.join(' ')
       self.computer_station = doc.search("tr td")[1].text[1..-1].split.join(' ')
       self.nights_weekends = doc.search("tr td")[2].text.split.join(' ')
