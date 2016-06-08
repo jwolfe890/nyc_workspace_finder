@@ -1,5 +1,18 @@
+require 'pry'
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
+
+
+# doc.search("div#tps_slideContainer_12331").text
+# name
+
+
 class NycWorkspaceFinder::CLI 
     def call
+      doc = Nokogiri::HTML(open("https://42floors.com/coworking/us/ny/new-york"))
+
+      binding.pry 
       puts "-------------------------------------------------------------------------------------------------------------------------------"
       puts "WELCOME TO NYC WORKSPACE FINDER. PROVIDING UP-TO-DATE PRICING INFO ON UNIQUE, ART OR PUNK-ORIENTED WORKSPACES IN NEW YORK CITY!"
       puts "-------------------------------------------------------------------------------------------------------------------------------"

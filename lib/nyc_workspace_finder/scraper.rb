@@ -34,7 +34,7 @@ attr_accessor :computer_station, :open_desk, :nights_weekends,
       doc = Nokogiri::HTML(open("http://conartistnyc.com/blogs/news/10543057-need-workspace"))
       self.limited = doc.search("div.post-content p").text.match(/LIMITED(.*)9\sa\sweek./).to_s
       self.monthly = doc.search("div.post-content p").text.match(/MONTHLY(.*)5./).to_s
-    end 
+    end
 end
 
 

@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby 
 
-require './lib/nyc_workspace_finder'
+require_relative '../lib/nyc_workspace_finder'
+require 'nokogiri'
+require 'open-uri'
+require 'pry'
 
 NycWorkspaceFinder::CLI.new.call 
