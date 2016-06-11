@@ -5,4 +5,4 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-NycWorkspaceFinder::CLI.new.call 
+NycWorkspaceFinder::Floorcli2.new.call 

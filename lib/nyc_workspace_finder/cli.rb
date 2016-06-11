@@ -8,6 +8,8 @@ require 'pry'
 # name
 
 
+
+
 class NycWorkspaceFinder::CLI 
     def call
       doc = Nokogiri::HTML(open("https://42floors.com/coworking/us/ny/new-york"))
