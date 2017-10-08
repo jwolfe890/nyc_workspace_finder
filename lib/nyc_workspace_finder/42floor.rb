@@ -29,25 +29,3 @@ class NycWorkspaceFinder::Floors
 
     end
 
-    # def all
-    #   scrape_42floors.each.with_index(1) do |space, i|
-    #   puts "#{i}. #{space}"
-    # end
-    # end
-
-    # def doc
-    #   @doc ||= Nokogiri::HTML(open(self.url))
-    # end  
-
-
-
-
-# hello.each {|x| puts x.match(/\d+/)}
-
-# .match(/MONTHLY(.*)5./).to_s
-# Floors.scrape_42floors
-# Floors.numbers 
-# Floors.url 
-# doc.search("div.title a")[1]["href"]
-# THIS!
-
